@@ -1,15 +1,59 @@
 body {
-  background-color: lightblue;
+  background-color: #000; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
 }
 
-h1 {
-  color: navy;
-  margin-left: 20px;
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
 }
 
-p {
-  text-align: center;
-  color: red;
+.left {
+  width: 55%;
 }
+
+.subtitle {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.hi {
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.name {
+  font-size: 70px;
+  font-weight: bold;
+  color: #b578e0; 
+  margin-top: -10px;
+}
+
+.sections {
+  font-size: 20px;
+  line-height: 1.6;
+  color: white;
+  text-align: left;
+}
+
+.right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 
 
