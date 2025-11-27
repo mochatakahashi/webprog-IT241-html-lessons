@@ -6,6 +6,17 @@ h1{
   color: rgb(133, 38, 200);
   font-size: 100px;
 }
+
+body{
+  background-color: black;
+  font
+}
+
+p{
+  color: white;
+  font-size: 30px;
+}
+
 .profile-description {
   display: flex;
   justify-content: space-between;
