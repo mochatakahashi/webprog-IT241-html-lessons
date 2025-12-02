@@ -38,11 +38,12 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  height: 100px;
 }
 
 .menu li {
   padding: 8px;
-  margin-bottom: 100px;
+  margin-bottom: 7px;
   background-color: #33b5e5;
   color: #ffffff;
 }
