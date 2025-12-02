@@ -1,3 +1,16 @@
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: #e6d6ff; 
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
