@@ -217,7 +217,7 @@ Picture Gallery<br>
     </ul>
     </div> 
 
-    <div class="footer"><p>Resize the browser window to see the responsive effect.</p></div>
+    <div class="footer"><p>Maangas itong gawa namin ng kalaban ni FPJ, na si RODMINA!</p></div>
 </div>
 
 </body>
