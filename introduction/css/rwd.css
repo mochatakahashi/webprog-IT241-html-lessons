@@ -1,103 +1,183 @@
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* --- GLOBAL STYLES --- */
 body {
-  font-family: "Lucida Sans", sans-serif;
-  font-size: 17px;
+    background-color: #050505; /* Black background */
+    color: #ffffff;            /* White text */
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: block;
+    overflow-x: hidden;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header'
-    'menu'
-    'main'
-    'facts'
-    'footer';
-  background-color: white;
-  gap: 10px;  
+/* --- LAYOUT CONTAINER --- */
+.hero-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.header {
-  grid-area: header;
-  background-color: purple;
-  text-align: center;
-  color: #ffffff;
+/* --- LEFT SIDE (TEXT) --- */
+.text-content {
+    flex: 1;
 }
 
-.header > h1 {
-  font-size: 40px;
+.top-label {
+    font-size: 14px;
+    color: #bbbbbb;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
-.menu {
-  grid-area: menu;
-  }
-  
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 10px; /* Reduced space slightly */
+    font-weight: 800;
 }
 
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
+.highlight-purple {
+    color: #9D65C9; /* Purple name */
 }
 
-.menu li:hover {
-  background-color: #0099cc;
-}
-  
-.content {
-  grid-area: main;
-}
-
-.content > h1 {
-  font-size: 30px;
-  margin-bottom: 7px;
+/* Subtitle Style */
+.subtitle {
+    font-size: 24px;
+    font-weight: normal;
+    color: #ffffff;
+    margin-bottom: 25px; /* Space before the paragraph */
 }
 
-.content > p {
-  margin-bottom: 7px;
+/* Paragraph Style */
+.bio-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #dddddd;
+    max-width: 550px; /* Prevents text from being too wide */
 }
 
-.facts {
-  grid-area: facts;
-  border: 1px solid #0099cc;
-  background-color: beige;
-  padding: 10px;
+/* --- RIGHT SIDE (IMAGE) --- */
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.facts > h2 {
-  font-size: 20px;
+.image-content img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 3px solid #9D65C9;
+    box-shadow: 0 0 30px rgba(157, 101, 201, 0.6);
 }
 
-.facts li {
-  margin-bottom: 5px;
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .image-content {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    .bio-text {
+        margin: 0 auto; /* Centers text on mobile */
+    }
 }
 
-.footer {
-  grid-area: footer;
-  background-color: #0099cc;
-  color: #ffffff;
-  text-align: center;
+/* --- SECTION 2: SUMMARY (Lighter Background) --- */
+.summary-section {
+    background-color: #121212; /* Slightly lighter than the main black */
+    padding: 80px 0;           /* Top/Bottom spacing */
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-@media (min-width: 600px) {
-  .header {grid-area: 1 / span 6;}
-  .menu {grid-area: 2 / span 1;}
-  .content {grid-area: 2 / span 4;}
-  .facts {grid-area: 3 / span 6;}
-  .footer {grid-area: 4 / span 6;}
+.summary-container {
+    width: 90%;
+    max-width: 1200px;
 }
 
-@media (min-width: 768px) {
-  .header {grid-area: 1 / span 6;}
-  .menu {grid-area: 2 / span 1;}
-  .content {grid-area: 2 / span 4;}
-  .facts {grid-area: 2 / span 1;}
-  .footer {grid-area: 3 / span 6;}
+/* Headers */
+.section-subtitle {
+    color: #9D65C9; /* Purple color */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 50px; /* Space between title and cards */
+}
+
+/* The Grid Layout */
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 30px; /* Space between the cards */
+}
+
+/* Card Styling */
+.card {
+    background-color: #1a1a1a; /* Even lighter background for the card itself */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth hover animation */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Moves up slightly when hovered */
+    background-color: #222222;
+}
+
+/* Placeholder Image Box */
+.card-image {
+    background-color: #555555; /* Gray placeholder color */
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaaaaa;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+/* --- RESPONSIVENESS FOR SECTION 2 --- */
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr; /* Stack cards in 1 column on mobile */
+    }
+    
+    .section-header h2 {
+        font-size: 30px;
+    }
 }
