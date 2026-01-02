@@ -1,14 +1,14 @@
 /* --- COLOR VARIABLES (The Magic Part) --- */
 :root {
-    /* DEFAULT: LIGHT MODE (Purple House Inspired) */
-    --bg-color: #f5f0ff;       /* Soft lavender background like Purple House */
-    --section-bg: #e8dff5;     /* Slightly darker lilac for sections */
-    --text-color: #2d1b4e;     /* Deep purple text for readability */
-    --text-secondary: #5a3d7a; /* Medium purple for subtitles */
-    --card-bg: #ffffff;        /* White cards */
-    --accent-color: #9D65C9;   /* Main purple brand color */
-    --border-color: #c8b6e2;   /* Light purple borders */
-    --shadow: 0 4px 15px rgba(106, 27, 154, 0.15); /* Soft purple shadow */
+    /* DEFAULT: LIGHT MODE */
+    --bg-color: #f5f0ff;
+    --section-bg: #e8dff5;
+    --text-color: #2d1b4e;
+    --text-secondary: #5a3d7a;
+    --card-bg: #ffffff;
+    --accent-color: #9D65C9;
+    --border-color: #c8b6e2;
+    --shadow: 0 4px 15px rgba(106, 27, 154, 0.15);
 }
 
 [data-theme="dark"] {
@@ -93,6 +93,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    padding-left: 100px;
 }
 
 /* --- LEFT SIDE (TEXT) --- */
@@ -148,8 +149,7 @@ h1 {
     height: auto;
     border-radius: 15px;
     object-fit: cover;
-    border: 3px solid var(--accent-color);
-    box-shadow: var(--shadow);
+    margin-right: 50px;
 }
 
 /* --- MOBILE RESPONSIVENESS --- */
