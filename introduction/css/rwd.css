@@ -525,6 +525,70 @@ h1 {
     line-height: 1.6;
 }
 
+/* Content Pages Mobile Responsiveness */
+@media (max-width: 768px) {
+    .page-container {
+        padding: 80px 5% 30px 5%;
+    }
+    
+    .back-button {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .content-section h1 {
+        font-size: 32px;
+        margin-bottom: 25px;
+        line-height: 1.2;
+        word-wrap: break-word;
+    }
+    
+    .content-box {
+        padding: 25px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .content-box h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    
+    .content-box p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: 70px 4% 25px 4%;
+    }
+    
+    .back-button {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .content-section h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .content-box {
+        padding: 20px 15px;
+        margin-bottom: 15px;
+    }
+    
+    .content-box h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .content-box p {
+        font-size: 15px;
+    }
+}
+
 /* --- GALLERY GRID --- */
 .gallery-section-title {
     color: var(--accent-color);
