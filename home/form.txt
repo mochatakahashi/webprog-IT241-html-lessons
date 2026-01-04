@@ -20,3 +20,23 @@ v-if - Conditional rendering (only shows element if condition is true)
 The form connects to js/contact-form.js which contains the Vue logic for formData, isSubmitting, submitMessage, submitStatus, and the submitForm()
 
 
+this one is not mobile responsive.
+the education
+
+Perfect! I've added comprehensive mobile responsive styles for all content pages including the education page:
+
+Mobile (≤768px):
+
+Title: 56px → 32px
+Content boxes: Reduced padding (40px → 25px)
+Subtitles: 32px → 22px
+Text: 20px → 16px
+Small phones (≤480px):
+
+Title: 32px → 28px
+Content boxes: Even more compact padding (20px)
+Subtitles: 22px → 20px
+Text: 16px → 15px
+The education page (and all other content pages like goals, experience, hobbies, projects, blogs) will now display properly on mobile devices with appropriately sized text and spacing!
+
+
