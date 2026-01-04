@@ -36,9 +36,9 @@
 
 /* --- THEME TOGGLE BUTTON --- */
 .theme-btn {
-    position: fixed;
-    top: 30px;
-    right: 30px;
+    position: fixed !important;
+    top: 30px !important;
+    right: 30px !important;
     width: 60px;
     height: 60px;
     border-radius: 50%;
