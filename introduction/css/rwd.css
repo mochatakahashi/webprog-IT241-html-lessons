@@ -79,8 +79,8 @@
 
 /* --- GLOBAL STYLES --- */
 body {
-    background-color: var(--bg-color);  /* Uses the variable! */
-    color: var(--text-color);           /* Uses the variable! */
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: 'Arial', sans-serif;
     min-height: 100vh;
     display: block;

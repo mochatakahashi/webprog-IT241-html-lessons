@@ -1,0 +1,22 @@
+can you explain me the <!-- Vue.js Contact Form -->
+
+this section contact-form-section.
+
+put comments if needed.
+
+h2, section, p, div, label, this simple thing doesnt need to explain anymore
+
+Done! I've added comments explaining the Vue.js-specific parts:
+
+Key Vue.js concepts in this form:
+
+id="contactApp" - Connects HTML to Vue app
+@submit.prevent - Vue event handler that prevents default form submission
+v-model - Two-way data binding (updates data when you type, updates input when data changes)
+:disabled - Dynamic attribute binding (colon : means it's reactive)
+{{ }} - Displays dynamic data/expressions
+v-if - Conditional rendering (only shows element if condition is true)
+:class - Dynamically applies CSS classes based on data
+The form connects to js/contact-form.js which contains the Vue logic for formData, isSubmitting, submitMessage, submitStatus, and the submitForm()
+
+
