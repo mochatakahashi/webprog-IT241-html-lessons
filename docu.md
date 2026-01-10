@@ -120,6 +120,7 @@ AI Tools:
   * CSS responsive design guidance
   * Vue.js implementation for contact form
   * Content structure and organization
+https://gemini.google.com/app/3a3bf4abf5249920 
 
 References:
 - W3Schools: HTML/CSS syntax reference and card animations
@@ -128,3 +129,13 @@ References:
 - Flaticon: Icon resources for UI elements
 - Vecteezy: Theme toggle moon icon
 - Vue.js Documentation: Contact form implementation
+
+
+
+
+The background color of section 1 (hero section) comes from the body element at line 77-85 in rwd.css:
+
+The actual color value is defined in the CSS variable --bg-color at the top of the file (around line 4). Currently it's set to linear-gradient(135deg, #f5f0ff 0%, #e8dff5 50%, #f0e6ff 100%) for light mode.
+
+The .hero-container itself doesn't have a background color specified - it's transparent, so it shows the body's background through it.
+
