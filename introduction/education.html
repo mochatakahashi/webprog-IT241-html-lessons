@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education / Achievements - Rodmina Ibe</title>
-    <link rel="stylesheet" href="css/rwd.css">
+    <link rel="stylesheet" href="css/rwd.css?v=3">
 </head>
 <body>
 
@@ -19,18 +19,95 @@
         <div class="content-section">
             <h1>Education / Achievements</h1>
             
-            <div class="content-box">
-                <h2>Educational Background</h2>
-                <p>- Asia Pacific College</p>
-            </div>
+            <div class="education-grid">
+                <!-- Senior High School Card -->
+                <div class="education-card">
+                    <h2 class="education-title">Senior High School - Arellano University</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active">
+                                <img src="images/education-and-achievements/after-game.jpg" alt="Friends at Arellano University">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/education-and-achievements/best-in-research-cert.jpg" alt="Best in Research Project Certificate">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/education-and-achievements/pic-with-trophy.jpg" alt="Pic with Trophy">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/education-and-achievements/treasurer-cert.jpg" alt="ICT Club Treasurer Certificate">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(0, -1)">❮</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(0, 1)">❯</button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(0, 0)"></span>
+                            <span class="dot" onclick="currentSlide(0, 1)"></span>
+                            <span class="dot" onclick="currentSlide(0, 2)"></span>
+                            <span class="dot" onclick="currentSlide(0, 3)"></span>
+                        </div>
+                    </div>
+                    <div class="achievement-list">
+                        <h3>Achievements</h3>
+                        <ul>
+                            <li>Best in Arellano Best In Research</li>
+                            <li>Top 2 Overall in ICT strand</li>
+                            <li>ICT Club Treasurer</li>
+                            <li>Grade 12 PE Club Representative</li>
+                        </ul>
+                    </div>
+                </div>
 
-            <div class="content-box">
-                <h2>Achievements & Awards</h2>
-                <p>- Best in Arellano Best In Research</p>
+                <!-- College Card -->
+                <div class="education-card">
+                    <h2 class="education-title">College - Asia Pacific College</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active">
+                                <img src="images/education-and-achievements/heads in cloud.jpg" alt="Heads in the Cloud Event">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/education-and-achievements/msc workshop.jpg" alt="MSC Speaker Workshop">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/education-and-achievements/with-rico-hizon.jpg" alt="Rico Hizon and SOAR">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/education-and-achievements/with kuya's and ate's.jpg" alt="with Kuya's and Ate's">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/education-and-achievements/fist-bump-with-socit.jpg" alt="SocIT Officers">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(1, -1)">❮</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(1, 1)">❯</button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(1, 0)"></span>
+                            <span class="dot" onclick="currentSlide(1, 1)"></span>
+                            <span class="dot" onclick="currentSlide(1, 2)"></span>
+                            <span class="dot" onclick="currentSlide(1, 3)"></span>
+                            <span class="dot" onclick="currentSlide(1, 4)"></span>
+                        </div>
+                    </div>
+                    <div class="achievement-list">
+                        <h3>Achievements</h3>
+                        <ul>
+                            <li>Whoscall x Gogolook Ambassador (Digital Defender)</li>
+                            <li>SM Student Ambassador</li>
+                            <li>School Ambassador</li>
+                            <li>AmbassadHERS+ Ambassador</li>
+                            <li>JISSA-APC Previous OIC Relations Executive</li>
+                            <li>JPCS-APC External Relations</li>
+                            <li>APC-MSC Events Head</li>
+                            <li>APC-SOAR Public Relations Officer</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="js/theme-toggle.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>
