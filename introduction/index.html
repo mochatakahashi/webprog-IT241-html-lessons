@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodmina's Profile</title>
-    <link rel="stylesheet" href="css/rwd.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="css/rwd.css?v=5">
 </head>
 <body>
 
@@ -121,62 +120,13 @@
         </div>
     </section>
 
-    <!-- Vue.js Contact Form -->
-    <!-- id="contactApp" connects this section to the Vue.js app defined in contact-form.js -->
-    <section class="contact-form-section" id="contactApp">
-        <h2>Get In Touch</h2>
-        <p class="contact-subtitle">Subscribe to my newsletter or send me a message!</p>
-        
-        <!-- @submit.prevent="submitForm" prevents default form submission and calls submitForm() method instead -->
-        <form @submit.prevent="submitForm" class="contact-form">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <!-- v-model="formData.name" creates two-way data binding between input and Vue data -->
-                <input 
-                    type="text" 
-                    id="name" 
-                    v-model="formData.name" 
-                    placeholder="Your Name"
-                    required
-                >
-            </div>
+    <!-- Guestbook Section (Powered by React + Nest.js + Supabase) -->
+    <section class="guestbook-section" id="guestbook">
+        <h2 class="guestbook-heading">Welcome to my Guestbook</h2>
+        <p class="guestbook-subtitle">Leave a message below!</p>
 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <!-- v-model binds this input to formData.email in Vue -->
-                <input 
-                    type="email" 
-                    id="email" 
-                    v-model="formData.email" 
-                    placeholder="your.email@example.com"
-                    required
-                >
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message</label>
-                <!-- v-model binds textarea to formData.message -->
-                <textarea 
-                    id="message" 
-                    v-model="formData.message" 
-                    placeholder="Your message here..."
-                    rows="5"
-                    required
-                ></textarea>
-            </div>
-
-            <!-- :disabled dynamically disables button when isSubmitting is true -->
-            <!-- {{ }} displays dynamic text - shows "Sending..." or "Send Message" based on isSubmitting state -->
-            <button type="submit" class="submit-btn" :disabled="isSubmitting">
-                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
-            </button>
-
-            <!-- v-if only shows this div when submitMessage has a value -->
-            <!-- :class dynamically applies CSS classes based on submitStatus (success/error) -->
-            <div v-if="submitMessage" :class="['submit-message', submitStatus]">
-                {{ submitMessage }}
-            </div>
-        </form>
+        <!-- React Component Mount Point -->
+        <div id="guestbook-root"></div>
     </section>
 
     <footer class="connect-section">
@@ -217,7 +167,11 @@
 </footer>
 
 <script src="js/theme-toggle.js"></script>
-<script src="https://web3forms.com/client/script.js" async defer></script>
-<script src="js/contact-form.js"></script>
+
+<!-- React + Nest.js + Supabase Guestbook -->
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel" src="js/guestbook.js"></script>
 </body>
 </html>
