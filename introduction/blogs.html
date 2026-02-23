@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
     </button>
 
     <div class="page-container">
-        <a href="index.html" class="back-button">← Back to Home</a>
+        <a href="index.html" class="back-button">&#8592; Back to Home</a>
         
         <div class="content-section">
             <h1>My Blogs</h1>
@@ -24,25 +24,49 @@
                 <div class="education-card">
                     <h2 class="education-title">Hi I'm Mina!</h2>
                     <div class="achievement-list">
-                        <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6;">About me will be here soon.</p>
+                        <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6;">About me will be here soon. But I like purple!</p>
                     </div>
                 </div>
 
                 <!-- Blog Post 2 Card -->
                 <div class="education-card">
-                    <h2 class="education-title">Reflecting on a Fantastic AWS Student Community Night! ☁️</h2>
+                    <h2 class="education-title">Reflecting on a Fantastic AWS Student Community Night!</h2>
+
+                    <!-- Photo Carousel -->
+                    <div class="carousel-container">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active">
+                                <img src="images/aws-night-solo.jpg" alt="Mina at AWS Student Community Night">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/aws-night-jessica.jpg" alt="Mina with Jessica Gilmore at AWS">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/aws-night-group.jpg" alt="Group photo at AWS Student Community Night">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(0, -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(0, 1)">&#10095;</button>
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(0, 0)"></span>
+                            <span class="dot" onclick="currentSlide(0, 1)"></span>
+                            <span class="dot" onclick="currentSlide(0, 2)"></span>
+                        </div>
+                    </div>
+
                     <div class="achievement-list">
-                        <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6;">I had an incredible time sharing my insights and learning from the best at the recent AWS Student Community Night.
-
-As part of the first batch, I participated in a roundtable discussion with Jessica Gilmore, EdD from the Global AWS team. We talked a lot about what students and communities truly need to grow, gain hands-on experience, and bridge the gap between academia and the industry.
-
-We also discussed the real barriers students face, such as building technical confidence and overcoming the fear of public speaking (something I’m working on too!).
-
-The best part? Reconnecting with familiar faces and meeting fellow tech enthusiasts. Huge shoutout to my girls Mary Jean Navarro and Rodelene Joy Leonorio, LPT: it’s always a highlight seeing you both at these events!
-
-Looking forward to more growth and cloud-focused conversations. 🚀
-
-hashtag#AWS hashtag#CloudComputing hashtag#StudentCommunity hashtag#Networking hashtag#AWSCloud</p>
+                        <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6; text-indent: 2em; margin-bottom: 12px;">I had an incredible time sharing my insights and learning from the best at the recent AWS Student Community Night.</p>
+                        <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6; text-indent: 2em; margin-bottom: 12px;">As part of the first batch, I participated in a roundtable discussion with Jessica Gilmore, EdD from the Global AWS team. We talked a lot about what students and communities truly need to grow, gain hands-on experience, and bridge the gap between academia and the industry.</p>
+                        <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6; text-indent: 2em; margin-bottom: 12px;">We also discussed the real barriers students face, such as building technical confidence and overcoming the fear of public speaking (something I&#x2019;m working on too!).</p>
+                        <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6; text-indent: 2em; margin-bottom: 12px;">The best part? Reconnecting with familiar faces and meeting fellow tech enthusiasts. Huge shoutout to my girls Mary Jean Navarro and Rodelene Joy Leonorio, LPT: it&#x2019;s always a highlight seeing you both at these events!</p>
+                        <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6; text-indent: 2em; margin-bottom: 16px;">Looking forward to more growth and cloud-focused conversations. &#x1F680;</p>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 2; text-align: center;">
+                            <span style="margin-right: 8px;">#AWS</span>
+                            <span style="margin-right: 8px;">#CloudComputing</span>
+                            <span style="margin-right: 8px;">#StudentCommunity</span>
+                            <span style="margin-right: 8px;">#Networking</span>
+                            <span>#AWSCloud</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -50,6 +74,7 @@ hashtag#AWS hashtag#CloudComputing hashtag#StudentCommunity hashtag#Networking h
     </div>
 
     <script src="js/theme-toggle.js"></script>
+    <script src="js/carousel.js"></script>
 
     <!-- Grainient: animated gradient background -->
     <script src="js/grainient.js"></script>
